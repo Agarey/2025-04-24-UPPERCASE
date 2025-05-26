@@ -23,7 +23,7 @@
 ## Быстрый старт
 
 ```bash
-git clone https://github.com/you/movie-catalog.git
+git clone https://github.com/Agarey/2025-04-24-UPPERCASE
 cd movie-catalog
 cp .env.example .env.local        # ⇐ впишите ключи (см. ниже)
 npm i                             # или pnpm / yarn
