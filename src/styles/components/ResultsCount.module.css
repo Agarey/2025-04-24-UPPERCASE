@@ -1,0 +1,9 @@
+.results_count {
+  display: inline-block;
+  background-color: var(--accent);
+  color: #fff;
+  padding: 0.25rem 1rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}

@@ -1,0 +1,66 @@
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+.control {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.control label {
+  margin-right: 0.5rem;
+  color: var(--text-primary);
+}
+
+.control select {
+  padding: 0.25rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--card);
+  color: var(--text-primary);
+  font-size: 0.9rem;
+}
+
+.order_controls {
+  display: flex;
+  align-items: center;
+}
+
+.order_btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+  color: var(--text-secondary);
+  transition: color 0.2s;
+}
+
+.order_btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.order_btn--active {
+  color: var(--accent);
+}
+
+.reset_btn {
+  background: var(--accent);
+  border: none;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #fff;
+  transition: opacity 0.2s;
+}
+
+.reset_btn:hover {
+  opacity: 0.8;
+}

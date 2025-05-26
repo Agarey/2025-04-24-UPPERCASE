@@ -1,0 +1,46 @@
+.header__user {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--border);
+}
+
+.username {
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.menu {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 0.5rem);
+  z-index: 100;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  list-style: none;
+  padding: 0.5rem 0;
+  width: 160px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.menuItem {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  color: var(--text-primary);
+  transition: background 0.2s;
+}
+
+.menuItem:hover {
+  background: var(--border);
+  color: white;
+}

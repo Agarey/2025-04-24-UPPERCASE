@@ -1,0 +1,79 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination__button {
+  padding: 8px 12px;
+  border: 1px solid #e9ecf6;
+  background-color: #fcfcff;
+  color: #333;
+  cursor: pointer;
+  min-width: 40px;
+  text-align: center;
+  line-height: 20px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination__button--active {
+  background-color: #f3f5f9;
+}
+
+.pagination__button:first-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.pagination__button:last-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.pagination__arrow {
+  padding: 0;
+  width: 40px;
+  height: 40px;
+}
+
+.pagination__arrow img {
+  width: 20px;
+  height: 20px;
+}
+
+.pagination__ellipsis {
+  cursor: default;
+}
+
+.pagination__button:disabled {
+  cursor: default;
+  background-color: #fcfcff;
+}
+
+[data-theme='dark'] .pagination__button {
+  border-color: var(--border);
+  background-color: var(--card);
+  color: var(--text);
+}
+
+[data-theme='dark'] .pagination__button--active {
+  background-color: var(--border);
+  color: var(--text);
+}
+
+[data-theme='dark'] .pagination__ellipsis,
+[data-theme='dark'] .pagination__button:disabled {
+  background-color: var(--card);
+  color: var(--text-secondary);
+  border-color: var(--border);
+  opacity: 0.6;
+}
+
+[data-theme='dark'] .pagination__arrow img {
+  filter: var(--icon-filter);
+}
